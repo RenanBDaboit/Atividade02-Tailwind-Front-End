@@ -6,7 +6,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>WEG SyncDrive IoT - Exercício Tailwind CSS</title>
 </head>
-<body class="bg-[#F7F9FC]">
+<body>
 
   <!-- ==========================================
        1. HEADER / NAVBAR
@@ -50,7 +50,7 @@
     =========================================== -->
     <section id="solucao">
       <div>
-        <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12">
+        <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12 bg-gradient-to-b from-white to-[#F0F4F8] border-b border-[#E1E7EF]">
           
           <!-- Coluna 1: Conteúdo Textual -->
           <div class="flex flex-col gap-6">
@@ -66,36 +66,36 @@
           </div>
 
           <!-- Coluna 2: Card de Telemetria IoT -->
-          <div class="px-4 py-4 bg-[#0F172A] rounded-2xl">
-            <div class="flex flex-col gap-2">
-              <div class="flex pb-3 justify-between border-b border-[#1E293B]">
-                <span class="flex ">NODE_ID: WEG-MTR-8842</span>
+          <div class="px-6 py-5 bg-[#0F172A] rounded-2xl">
+            <div class="flex flex-col gap-4">
+              <div class="flex pb-3 justify-between items-center border-b border-[#1E293B]">
+                <span class="text-[#60A5FA] text-[10px]">NODE_ID: WEG-MTR-8842</span>
                 <div>
-                  <span></span>
-                  <span>Online 60Hz</span>
+                  <span class="px-1 py-1x rounded-2xl bg-[#10B981]"></span>
+                  <span class="text-[#94A3B8] text-sm pl-2">Online 60Hz</span>
                 </div>
               </div>
 
-              <div>
-                <div>
-                  <span>Eficiência Energética</span>
-                  <div>96.8% <span>(Padrão IE5)</span></div>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-left px-4 py-4 bg-[#1B2637] rounded-lg">
+                  <span class="text-[#94A3B8] text-xs">Eficiência Energética</span>
+                  <div class="text-2xl text-white font-bold">96.8% <span class="text-sm font-normal text-[#34D399]">(Padrão IE5)</span></div>
                 </div>
 
-                <div>
-                  <div>
-                    <span>Vibração RMS</span>
-                    <div>0.82 mm/s</div>
-                    <span>✓ Faixa Ideal ISO</span>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="flex flex-col gap-1 text-left px-4 py-4 bg-[#1B2637] rounded-lg">
+                    <span class="text-[#94A3B8] text-sm">Vibração RMS</span>
+                    <div class="text-white text-xl font-bold pb-1">0.82 mm/s</div>
+                    <span class="text-[#34D399] text-xs">✓ Faixa Ideal ISO</span>
                   </div>
-                  <div>
-                    <span>Temp. Mancal</span>
-                    <div>62.4 °C</div>
-                    <span>Normal (PT100)</span>
+                  <div class="flex flex-col gap-1 text-left px-4 py-4 bg-[#1B2637] rounded-lg">
+                    <span class="text-[#94A3B8] text-sm">Temp. Mancal</span>
+                    <div class="text-white text-xl font-bold pb-1">62.4 °C</div>
+                    <span class="text-[#60A5FA] text-xs">Normal (PT100)</span>
                   </div>
                 </div>
 
-                <div>
+                <div class="px-3 py-3 bg-[#141F43] border border-[#182D6E] rounded-lg text-[#BFDBFE] text-left text-xs">
                   ⚡ Previsão de manutenção: operação normal pelos próximos 12 meses.
                 </div>
               </div>
@@ -113,29 +113,29 @@
          - Efeito hover nos cards com transição suave de borda ou sombra.
     =========================================== -->
     <section id="recursos">
-      <div>
-        <div>
-          <h2>Engenharia pensada para regime contínuo</h2>
-          <p>Projetado para suportar ambientes industriais severos sem comprometer o fluxo operacional.</p>
+      <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12">
+        <div class="flex flex-col gap-2 px-4">
+          <h2 class="text-[30px] font-extrabold">Engenharia pensada para regime contínuo</h2>
+          <p class="text-gray-600">Projetado para suportar ambientes industriais severos sem comprometer o fluxo operacional.</p>
         </div>
 
-        <div>
-          <article>
-            <div>⚙️</div>
-            <h3>Nível de Rendimento IE5</h3>
-            <p>Rotores com ímãs permanentes de terras raras que eliminam perdas por efeito Joule no rotor, gerando até 35% de economia em perdas elétricas.</p>
+        <div class="flex flex-col gap-4">
+          <article class="flex flex-col gap-3 items-start text-left px-6 py-5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
+            <div class="px-2.5 py-2.5 bg-[#DBEAFE] rounded-lg text-xl">⚙️</div>
+            <h3 class="text-lg font-bold">Nível de Rendimento IE5</h3>
+            <p class="text-sm text-gray-600">Rotores com ímãs permanentes de terras raras que eliminam perdas por efeito Joule no rotor, gerando até 35% de economia em perdas elétricas.</p>
           </article>
 
-          <article>
-            <div>📡</div>
-            <h3>Módulo IoT Plug & Play</h3>
-            <p>Sensores triaxiais acoplados de fábrica comunicando via Bluetooth Low Energy ou redes industriais cabeadas diretamente com o gateway da planta.</p>
+          <article class="flex flex-col gap-3 items-start text-left px-6 py-5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
+            <div class="px-2.5 py-2.5 bg-[#DBEAFE] rounded-lg text-xl">📡</div>
+            <h3 class="text-lg font-bold">Módulo IoT Plug & Play</h3>
+            <p class="text-sm text-gray-600">Sensores triaxiais acoplados de fábrica comunicando via Bluetooth Low Energy ou redes industriais cabeadas diretamente com o gateway da planta.</p>
           </article>
 
-          <article>
-            <div>🛡️</div>
-            <h3>Grau de Proteção IP66 / W3</h3>
-            <p>Carcaça em ferro fundido de alta resistência mecânica com pintura anticorrosiva de alto desempenho, apto para atmosferas agressivas.</p>
+          <article class="flex flex-col gap-3 items-start text-left px-6 py-5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
+            <div class="px-2.5 py-2.5 bg-[#DBEAFE] rounded-lg text-xl">🛡️</div>
+            <h3 class="text-lg font-bold">Grau de Proteção IP66 / W3</h3>
+            <p class="text-sm text-gray-600">Carcaça em ferro fundido de alta resistência mecânica com pintura anticorrosiva de alto desempenho, apto para atmosferas agressivas.</p>
           </article>
         </div>
       </div>
@@ -148,23 +148,23 @@
          - Grid de 2 colunas no mobile e 4 colunas em telas maiores.
     =========================================== -->
     <section id="metricas">
-      <div>
-        <div>
-          <div>
-            <div>-70%</div>
-            <div>Paradas Não Planejadas</div>
+      <div class="bg-[#0F172A] px-4 py-12">
+        <div class="grid grid-cols-2 grid-rows-2 gap-8">
+          <div class="flex flex-col items-center text-center gap-1 pt-4">
+            <div class="text-4xl font-extrabold text-[#60A5FA]">-70%</div>
+            <div class="text-[#CBD5E1] text-sm">Paradas Não Planejadas</div>
           </div>
-          <div>
-            <div>IE5</div>
-            <div>Classificação Energética</div>
+          <div class="flex flex-col items-center text-center gap-1 pt-4  border-t border-[#1E293B]">
+            <div class="text-4xl font-extrabold text-[#60A5FA]">IE5</div>
+            <div class="text-[#CBD5E1] text-sm">Classificação Energética</div>
           </div>
-          <div>
-            <div>100k+</div>
-            <div>Horas de Vida dos Mancais</div>
+          <div class="flex flex-col items-center text-center gap-1 pt-4 border-t border-[#1E293B]">
+            <div class="text-4xl font-extrabold text-[#60A5FA]">100k+</div>
+            <div class="text-[#CBD5E1] text-sm">Horas de Vida dos Mancais</div>
           </div>
-          <div>
-            <div>24/7</div>
-            <div>Telemetria em Nuvem</div>
+          <div class="flex flex-col items-center text-center gap-1 pt-4 border-t border-[#1E293B]">
+            <div class="text-4xl font-extrabold text-[#60A5FA]">24/7</div>
+            <div class="text-[#CBD5E1] text-sm">Telemetria em Nuvem</div>
           </div>
         </div>
       </div>
@@ -177,14 +177,14 @@
          - Uso de tags de categoria uppercase com tipografia reduzida.
     =========================================== -->
     <section id="aplicacoes">
-      <div>
-        <div>
-          <h2>Projetado para indústrias críticas</h2>
-          <p>Linhas de montagem e processos onde a interrupção não é uma opção.</p>
+      <div class="flex flex-col py-16 px-4 items-center text-center gap-8">
+        <div class="flex flex-col gap-3">
+          <h2 class="text-[30px] font-bold">Projetado para indústrias críticas</h2>
+          <p class="text-gray-600">Linhas de montagem e processos onde a interrupção não é uma opção.</p>
         </div>
 
-        <div>
-          <div>
+        <div class="flex flex-col items-center gap-4">
+          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg items-start">
             <span>Mineração</span>
             <h4>Correias & Britadores</h4>
             <p>Torque constante em baixas rotações sem necessidade de redutores pesados.</p>
