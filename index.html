@@ -16,7 +16,7 @@
        - Menu oculto em telas pequenas e visível em lg:.
   =========================================== -->
   <header>
-    <div class="flex flex-row justify-between items-center px-4 py-3.5 border-b border-[#E2E8F0] ">
+    <div class="flex flex-row items-center justify-between px-4 py-3.5 border-b border-[#E2E8F0] bg-white/90 fixed top-0 left-0 w-full h-16 bg-white z-50">
       <div class="flex flex-row gap-3">
         <div class="px-3 py-1 bg-[#1D4ED8] rounded-sm text-2xl font-bold text-white">WEG</div>
         <div class="flex flex-col pl-3 border-l border-[#2A58DA]">
@@ -50,10 +50,10 @@
     =========================================== -->
     <section id="solucao">
       <div>
-        <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12 bg-gradient-to-b from-white to-[#F0F4F8] border-b border-[#E1E7EF]">
+        <div class="flex flex-col px-3.5 py-16 items-center text-center gap-12 bg-gradient-to-b from-white to-[#F0F4F8] border-b border-[#E1E7EF]">
           
           <!-- Coluna 1: Conteúdo Textual -->
-          <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-6  py-16">
             <span class="px-3.5 py-1 bg-[#EFF6FF] mx-auto rounded-4xl border border-[#BFDBFE] text-[#1D4ED8]">• Indústria 4.0 & Manutenção Preditiva</span>
             <h1 class="text-[34px] font-extrabold leading-[46px]">WEG SyncDrive: Confiabilidade extrema com inteligência preditiva.</h1>
             <p class="text-gray-600">
@@ -177,35 +177,35 @@
          - Uso de tags de categoria uppercase com tipografia reduzida.
     =========================================== -->
     <section id="aplicacoes">
-      <div class="flex flex-col py-16 px-4 items-center text-center gap-8">
+      <div class="flex flex-col py-16 px-4 items-center text-center gap-8 border-b border-[#E2E8F0]">
         <div class="flex flex-col gap-3">
           <h2 class="text-[30px] font-bold">Projetado para indústrias críticas</h2>
           <p class="text-gray-600">Linhas de montagem e processos onde a interrupção não é uma opção.</p>
         </div>
 
         <div class="flex flex-col items-center gap-4">
-          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg items-start">
-            <span>Mineração</span>
-            <h4>Correias & Britadores</h4>
-            <p>Torque constante em baixas rotações sem necessidade de redutores pesados.</p>
+          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] gap-2 border border-[#E2E8F0] rounded-lg items-start text-left">
+            <span class="text-xs uppercase text-[#1D4ED8] font-bold ">Mineração</span>
+            <h4 class="text-sm font-bold text-slate-800">Correias & Britadores</h4>
+            <p class="text-xs text-gray-600">Torque constante em baixas rotações sem necessidade de redutores pesados.</p>
           </div>
 
-          <div>
-            <span>Saneamento</span>
-            <h4>Estações de Bombeamento</h4>
-            <p>Redução drástica do custo de kWh em bombas centrífugas de regime 24 horas.</p>
+          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] gap-2 border border-[#E2E8F0] rounded-lg items-start text-left">
+            <span class="text-xs uppercase text-[#1D4ED8] font-bold ">Saneamento</span>
+            <h4 class="text-sm font-bold text-slate-800">Estações de Bombeamento</h4>
+            <p class="text-xs text-gray-600">Redução drástica do custo de kWh em bombas centrífugas de regime 24 horas.</p>
           </div>
 
-          <div>
-            <span>Papel & Celulose</span>
-            <h4>Secadores e Bobinadeiras</h4>
-            <p>Precisão milimétrica de sincronismo de velocidade entre rolos condutores.</p>
+          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] gap-2 border border-[#E2E8F0] rounded-lg items-start text-left">
+            <span class="text-xs uppercase text-[#1D4ED8] font-bold ">Papel & Celulose</span>
+            <h4 class="text-sm font-bold text-slate-800">Secadores e Bobinadeiras</h4>
+            <p class="text-xs text-gray-600">Precisão milimétrica de sincronismo de velocidade entre rolos condutores.</p>
           </div>
 
-          <div>
-            <span>Agroindústria</span>
-            <h4>Silos & Ventiladores</h4>
-            <p>Operação imune a poeira condutiva com baixo índice de aquecimento residual.</p>
+          <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] gap-2 border border-[#E2E8F0] rounded-lg items-start text-left">
+            <span class="text-xs uppercase text-[#1D4ED8] font-bold ">Agroindústria</span>
+            <h4 class="text-sm font-bold text-slate-800">Silos & Ventiladores</h4>
+            <p class="text-xs text-gray-600">Operação imune a poeira condutiva com baixo índice de aquecimento residual.</p>
           </div>
         </div>
       </div>
@@ -220,82 +220,82 @@
          - Flexbox nos cards para fixar o link de leitura no rodapé.
     =========================================== -->
     <section id="novidades">
-      <div>
-        
-        <div>
+      <div class="flex flex-col py-16 px-4 gap-8 bg-[#F8FAFC] border-b border-[#E2E8F0]">
+
+        <div class="flex flex-col gap-3">
           <div>
-            <span>Sala de Imprensa & Artigos</span>
-            <h2>Últimas notícias WEG SyncDrive</h2>
+            <span class="text-[10px] uppercase font-semibold text-[#1D4ED8] tracking-widest">Sala de Imprensa & Artigos</span>
+            <h2 class="text-[28px] font-extrabold leading-[34px]">Últimas notícias WEG SyncDrive</h2>
           </div>
-          <a href="#">Ver central de notícias →</a>
+          <a class="text-xs text-[#1D4ED8] font-semibold" href="#">Ver central de notícias →</a>
         </div>
 
-        <div>
+        <div class="flex flex-col items-center gap-6">
           <!-- Notícia 1 -->
-          <article>
-            <div>⚙️</div>
-            <div>
-              <div>
-                <span>Engenharia</span>
-                <span>•</span>
-                <time>02 Set 2026</time>
+          <article class="rounded-lg  bg-white border border-[#E2E8F0]">
+            <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#1D4ED5] to-[#1E293B] rounded-t-lg">⚙️</div>
+            <div class="flex flex-col gap-2 px-6 py-6">
+              <div class="flex flex-row gap-2 items-center">
+                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF]">Engenharia</span>
+                <span class="text-sm text-gray-600/60">•</span>
+                <time class=" text-gray-500 text-xs">02 Set 2026</time>
               </div>
-              <h3>
+              <h3 class="font-bold">
                 <a href="#">Expansão da linha SyncDrive com novas carcaças até 500 kW</a>
               </h3>
-              <p>Novos modelos entregam rendimento nominal superior mesmo em cargas parciais de 25% a 50%.</p>
-              <a href="#">Ler comunicado técnico</a>
+              <p class="text-xs text-gray-600">Novos modelos entregam rendimento nominal superior mesmo em cargas parciais de 25% a 50%.</p>
+              <a class="text-xs font-bold text-[#1D4ED8]" href="#">Ler comunicado técnico</a>
             </div>
           </article>
 
           <!-- Notícia 2 -->
-          <article>
-            <div>🌱</div>
-            <div>
-              <div>
-                <span>Sustentabilidade</span>
-                <span>•</span>
-                <time>28 Ago 2026</time>
+          <article class="rounded-lg  bg-white border border-[#E2E8F0]">
+            <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#334156] to-[#1E3A89] rounded-t-lg">🌱</div>
+            <div class="flex flex-col gap-2 px-6 py-6">
+              <div class="flex flex-row gap-2 items-center">
+                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF]">Sustentabilidade</span>
+                <span class="text-sm text-gray-600/60">•</span>
+                <time class=" text-gray-500 text-xs">28 Ago 2026</time>
               </div>
-              <h3>
+              <h3 class="font-bold">
                 <a href="#">Estudo de caso: Usina reduz 420 toneladas de CO₂ ao ano</a>
               </h3>
-              <p>Substituição de parque de motores antigos por tecnologia IE5 com retorno de investimento em 14 meses.</p>
-              <a href="#">Baixar relatório PDF</a>
+              <p class="text-xs text-gray-600">Substituição de parque de motores antigos por tecnologia IE5 com retorno de investimento em 14 meses.</p>
+              <a class="text-xs font-bold text-[#1D4ED8]" href="#">Baixar relatório PDF</a>
             </div>
           </article>
 
           <!-- Notícia 3 -->
-          <article>
-            <div>🧠</div>
-            <div>
-              <div>
-                <span>Algoritmos IA</span>
+          <article class="rounded-lg  bg-white border border-[#E2E8F0]">
+            <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#2563E9] to-[#155E75] rounded-t-lg">🧠</div>
+            <div class="flex flex-col gap-2 px-6 py-6">
+              <div class="flex flex-row gap-2 items-center">
+                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF]">Algoritmos IA</span>
                 <span>•</span>
-                <time>15 Ago 2026</time>
+                <time class=" text-gray-500 text-xs">15 Ago 2026</time>
               </div>
-              <h3>
+              <h3 class="font-bold">
                 <a href="#">Atualização do firmware inclui detecção precoce de folga</a>
               </h3>
-              <p>Novo modelo preditivo cruza espectro harmônico de corrente com dados de aceleração dos mancais.</p>
-              <a href="#">Ver notas da versão</a>
+              <p class="text-xs text-gray-600">Novo modelo preditivo cruza espectro harmônico de corrente com dados de aceleração dos mancais.</p>
+              <a class="text-xs font-bold text-[#1D4ED8]" href="#">Ver notas da versão</a>
             </div>
           </article>
 
           <!-- Notícia 4 -->
-          <article>
-            <div>🏆</div>
-            <div>
-              <div>
-                <span>Premiação</span>
-                <span>•</span>
-                <time>04 Ago 2026</time>
+          <article class="rounded-lg  bg-white border border-[#E2E8F0]">
+            <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#1D283A] to-[#020617] rounded-t-lg">🏆</div>
+            <div class="flex flex-col gap-2 px-6 py-6">
+              <div class="flex flex-row gap-2 items-center">
+                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF]">Premiação</span>
+                <span class="text-sm text-gray-600/60">•</span>
+                <time class=" text-gray-500 text-xs">04 Ago 2026</time>
               </div>
-              <h3>
+              <h3 class="font-bold">
                 <a href="#">SyncDrive vence prêmio de Inovação Industrial 2026</a>
               </h3>
-              <p>Reconhecimento internacional destaca a robustez do hardware integrado ao ecossistema WEG IoT.</p>
-              <a href="#">Saiba mais</a>
+              <p class="text-xs text-gray-600">Reconhecimento internacional destaca a robustez do hardware integrado ao ecossistema WEG IoT.</p>
+              <a class="text-xs font-bold text-[#1D4ED8]" href="#">Saiba mais</a>
             </div>
           </article>
         </div>
@@ -310,28 +310,28 @@
          - Grid de formulário com campos em 2 colunas no desktop.
     =========================================== -->
     <section id="contato">
-      <div>
-        <div>
-          <h2>Dimensione seu motor com nossos especialistas</h2>
-          <p>Preencha os dados da sua aplicação e receba o estudo de payback e eficiência.</p>
+      <div class="flex flex-col gap-8 px-4 py-16 items-center">
+        <div class="flex flex-col gap-2 text-center">
+          <h2 class="text-[30px] font-bold leading-[32px]">Dimensione seu motor com nossos especialistas</h2>
+          <p class="text-gray-600">Preencha os dados da sua aplicação e receba o estudo de payback e eficiência.</p>
         </div>
 
-        <form>
-          <div>
-            <div>
-              <label>Nome Completo</label>
-              <input type="text" placeholder="Eng. Carlos Silva">
+        <form class="flex flex-col gap-4 px-6 py-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs uppercase font-semibold">Nome Completo</label>
+              <input class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs" type="text" placeholder="Eng. Carlos Silva">
             </div>
-            <div>
-              <label>E-mail Corporativo</label>
-              <input type="email" placeholder="carlos@industria.com.br">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs uppercase font-semibold">E-mail Corporativo</label>
+              <input class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs" type="email" placeholder="carlos@industria.com.br">
             </div>
           </div>
 
-          <div>
-            <div>
-              <label>Segmento da Planta</label>
-              <select>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs uppercase font-semibold">Segmento da Planta</label>
+              <select class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs">
                 <option>Mineração e Siderurgia</option>
                 <option>Papel e Celulose</option>
                 <option>Saneamento e Água</option>
@@ -339,13 +339,13 @@
                 <option>Alimentos e Bebidas</option>
               </select>
             </div>
-            <div>
-              <label>Potência Estimada (kW/cv)</label>
-              <input type="text" placeholder="Ex: 75 kW / 100 cv">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs uppercase font-semibold">Potência Estimada (kW/cv)</label>
+              <input class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs" type="text" placeholder="Ex: 75 kW / 100 cv">
             </div>
           </div>
 
-          <button type="submit">Solicitar Contato da Engenharia de Aplicação</button>
+          <button class="px-4 py-3.5 w-full rounded-sm text-white bg-[#1D4ED8] font-bold" href="#contato" type="submit">Solicitar Contato da Engenharia de Aplicação</button>
         </form>
       </div>
     </section>
@@ -358,23 +358,23 @@
        - Disposição em flexbox responsivo (colunas empilhadas no mobile, linha no desktop).
   =========================================== -->
   <footer>
-    <div>
-      <div>
-        <div>
-          <div>WEG</div>
-          <span>Transformando energia em soluções.</span>
+    <div class="flex flex-col gap-8 bg-[#0F172A] px-4 py-8 items-center">
+      <div class="flex flex-col items-center pb-8 gap-4 border-b border-[#1E293B]">
+        <div class="flex flex-row gap-3 items-center">
+          <div class="px-1.5 py-1 bg-[#1D4ED8] rounded-sm text-xs font-bold text-white">WEG</div>
+          <span class="text-xs text-white font-bold">Transformando energia em soluções.</span>
         </div>
-        <div>
+        <div class="grid grid-cols-3 text-sm gap-8 text-gray-400">
           <a href="#">Catálogos Técnicos</a>
           <a href="#">Assistências Técnicas</a>
           <a href="#">Portal do Cliente</a>
         </div>
       </div>
-      <div>
-        <p>© 2026 WEG Equipamentos Elétricos S.A. Todos os direitos reservados. (Projeto Fictício para Fins Didáticos).</p>
-        <div>
-          <a href="#">Termos de Uso</a>
-          <a href="#">Privacidade de Dados</a>
+      <div class="flex flex-col gap-4">
+        <p class="text-xs text-gray-500">© 2026 WEG Equipamentos Elétricos S.A. Todos os direitos reservados. (Projeto Fictício para Fins Didáticos).</p>
+        <div class="flex flex-row items-center justify-center gap-4">
+          <a class="text-xs text-gray-500 href="#">Termos de Uso</a>
+          <a class="text-xs text-gray-500 href="#">Privacidade de Dados</a>
         </div>
       </div>
     </div>
