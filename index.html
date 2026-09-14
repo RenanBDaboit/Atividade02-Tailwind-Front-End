@@ -16,7 +16,7 @@
        - Menu oculto em telas pequenas e visível em lg:.
   =========================================== -->
   <header>
-    <div class="flex flex-row items-center justify-between px-4 py-3.5 border-b border-[#E2E8F0] bg-white/90 fixed top-0 left-0 w-full h-16 bg-white z-50">
+    <div class="flex flex-row items-center justify-between px-4 py-3.5 border-b border-[#E2E8F0] bg-white/90 fixed top-0 left-0 w-full h-16 bg-white z-50 xl:px-88">
       <div class="flex flex-row gap-3">
         <div class="px-3 py-1 bg-[#1D4ED8] rounded-sm text-2xl font-bold text-white">WEG</div>
         <div class="flex flex-col pl-3 border-l border-[#2A58DA]">
@@ -25,16 +25,16 @@
         </div>
       </div>
 
-      <nav class="hidden md:lg">
-        <a href="#solucao">A Solução</a>
-        <a href="#recursos">Tecnologia</a>
-        <a href="#metricas">Performance</a>
-        <a href="#aplicacoes">Aplicações</a>
-        <a href="#novidades">Notícias</a>
+      <nav class="hidden flex-row gap-4 text-slate-800 2xl:flex">
+        <a class="text-sm" href="#solucao">A Solução</a>
+        <a class="text-sm" href="#recursos">Tecnologia</a>
+        <a class="text-sm" href="#metricas">Performance</a>
+        <a class="text-sm" href="#aplicacoes">Aplicações</a>
+        <a class="text-sm" href="#novidades">Notícias</a>
       </nav>
 
-      <div>
-        <a class="hidden" href="#contato">Falar com Consultor</a>
+      <div class="flex flex-row items-center gap-4">
+        <a class="hidden text-slate-800 2xl:flex" href="#contato">Falar com Consultor</a>
         <a class="flex items-center px-3 py-2.5 bg-[#1D4ED8] rounded-sm text-white text-[14px] font-semibold" href="#contato">Especificar Motor</a>
       </div>
     </div>
@@ -50,17 +50,17 @@
     =========================================== -->
     <section id="solucao">
       <div>
-        <div class="flex flex-col px-3.5 py-16 items-center text-center gap-12 bg-gradient-to-b from-white to-[#F0F4F8] border-b border-[#E1E7EF]">
+        <div class="flex flex-col px-3.5 py-16 items-center text-center gap-12 bg-gradient-to-b from-white to-[#F0F4F8] border-b border-[#E1E7EF] xl:grid xl:grid-cols-2 xl:px-88">
           
           <!-- Coluna 1: Conteúdo Textual -->
-          <div class="flex flex-col gap-6  py-16">
-            <span class="px-3.5 py-1 bg-[#EFF6FF] mx-auto rounded-4xl border border-[#BFDBFE] text-[#1D4ED8]">• Indústria 4.0 & Manutenção Preditiva</span>
-            <h1 class="text-[34px] font-extrabold leading-[46px]">WEG SyncDrive: Confiabilidade extrema com inteligência preditiva.</h1>
+          <div class="flex flex-col gap-6  py-16 xl:items-start xl:text-left">
+            <span class="px-3.5 py-1 bg-[#EFF6FF] mx-auto rounded-4xl border border-[#BFDBFE] text-[#1D4ED8] xl:mx-0">• Indústria 4.0 & Manutenção Preditiva</span>
+            <h1 class="text-[34px] font-extrabold leading-[46px] xl:text-[44px]">WEG SyncDrive: Confiabilidade extrema com inteligência preditiva.</h1>
             <p class="text-gray-600">
               O motor elétrico síncrono que combina rendimento ultra-premium (IE5), sensoriamento integrado de vibração e temperatura e conectividade instantânea com a nuvem WEG IoT.
             </p>  
-            <div class="flex flex-col gap-4 items-center">
-              <a class="px-4 py-3.5 w-full rounded-sm text-white bg-[#1D4ED8] font-semibold" href="#contato">Solicitar Folha de Dados</a>
+            <div class="flex flex-col gap-4 items-center xl:grid xl:grid-cols-2">
+              <a class="px-4 py-3.5 w-full rounded-sm text-white bg-[#1D4ED8] font-semibold whitespace-nowrap" href="#contato">Solicitar Folha de Dados</a>
               <a class="px-4 py-3.5 w-full rounded-sm text-gray-600 border border-[#CBD5E1] bg-white font-semibold" href="#recursos">Conhecer a Arquitetura</a>
             </div>
           </div>
@@ -113,13 +113,13 @@
          - Efeito hover nos cards com transição suave de borda ou sombra.
     =========================================== -->
     <section id="recursos">
-      <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12">
+      <div class="flex flex-col px-3.5 py-16.5 items-center text-center gap-12 xl:px-88">
         <div class="flex flex-col gap-2 px-4">
           <h2 class="text-[30px] font-extrabold">Engenharia pensada para regime contínuo</h2>
           <p class="text-gray-600">Projetado para suportar ambientes industriais severos sem comprometer o fluxo operacional.</p>
         </div>
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 xl:grid xl:grid-cols-3">
           <article class="flex flex-col gap-3 items-start text-left px-6 py-5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
             <div class="px-2.5 py-2.5 bg-[#DBEAFE] rounded-lg text-xl">⚙️</div>
             <h3 class="text-lg font-bold">Nível de Rendimento IE5</h3>
@@ -148,8 +148,8 @@
          - Grid de 2 colunas no mobile e 4 colunas em telas maiores.
     =========================================== -->
     <section id="metricas">
-      <div class="bg-[#0F172A] px-4 py-12">
-        <div class="grid grid-cols-2 grid-rows-2 gap-8">
+      <div class="bg-[#0F172A] px-4 py-12 xl:px-88">
+        <div class="grid grid-cols-2 grid-rows-2 gap-8 xl:grid-cols-4 xl:grid-rows-1">
           <div class="flex flex-col items-center text-center gap-1 pt-4">
             <div class="text-4xl font-extrabold text-[#60A5FA]">-70%</div>
             <div class="text-[#CBD5E1] text-sm">Paradas Não Planejadas</div>
@@ -177,13 +177,13 @@
          - Uso de tags de categoria uppercase com tipografia reduzida.
     =========================================== -->
     <section id="aplicacoes">
-      <div class="flex flex-col py-16 px-4 items-center text-center gap-8 border-b border-[#E2E8F0]">
+      <div class="flex flex-col py-16 px-4 items-center text-center gap-8 border-b border-[#E2E8F0] xl:px-88">
         <div class="flex flex-col gap-3">
           <h2 class="text-[30px] font-bold">Projetado para indústrias críticas</h2>
           <p class="text-gray-600">Linhas de montagem e processos onde a interrupção não é uma opção.</p>
         </div>
 
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-4 xl:flex-row">
           <div class="flex flex-col px-4 py-4 bg-[#F8FAFC] gap-2 border border-[#E2E8F0] rounded-lg items-start text-left">
             <span class="text-xs uppercase text-[#1D4ED8] font-bold ">Mineração</span>
             <h4 class="text-sm font-bold text-slate-800">Correias & Britadores</h4>
@@ -220,7 +220,7 @@
          - Flexbox nos cards para fixar o link de leitura no rodapé.
     =========================================== -->
     <section id="novidades">
-      <div class="flex flex-col py-16 px-4 gap-8 bg-[#F8FAFC] border-b border-[#E2E8F0]">
+      <div class="flex flex-col py-16 px-4 gap-8 bg-[#F8FAFC] border-b border-[#E2E8F0] xl:px-88 ">
 
         <div class="flex flex-col gap-3">
           <div>
@@ -230,7 +230,7 @@
           <a class="text-xs text-[#1D4ED8] font-semibold" href="#">Ver central de notícias →</a>
         </div>
 
-        <div class="flex flex-col items-center gap-6">
+        <div class="flex flex-col items-center gap-6 xl:grid xl:grid-cols-4 xl:items-stretch">
           <!-- Notícia 1 -->
           <article class="rounded-lg  bg-white border border-[#E2E8F0]">
             <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#1D4ED5] to-[#1E293B] rounded-t-lg">⚙️</div>
@@ -270,7 +270,7 @@
             <div class="px-auto text-center text-3xl py-16 bg-gradient-to-br from-[#2563E9] to-[#155E75] rounded-t-lg">🧠</div>
             <div class="flex flex-col gap-2 px-6 py-6">
               <div class="flex flex-row gap-2 items-center">
-                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF]">Algoritmos IA</span>
+                <span class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF] whitespace-nowrap">Algoritmos IA</span>
                 <span>•</span>
                 <time class=" text-gray-500 text-xs">15 Ago 2026</time>
               </div>
@@ -310,14 +310,14 @@
          - Grid de formulário com campos em 2 colunas no desktop.
     =========================================== -->
     <section id="contato">
-      <div class="flex flex-col gap-8 px-4 py-16 items-center">
+      <div class="flex flex-col gap-8 px-4 py-16 items-center xl:px-88">
         <div class="flex flex-col gap-2 text-center">
           <h2 class="text-[30px] font-bold leading-[32px]">Dimensione seu motor com nossos especialistas</h2>
           <p class="text-gray-600">Preencha os dados da sua aplicação e receba o estudo de payback e eficiência.</p>
         </div>
 
-        <form class="flex flex-col gap-4 px-6 py-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg">
-          <div class="flex flex-col gap-4">
+        <form class="flex flex-col gap-4 px-6 py-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg xl:w-200">
+          <div class="flex flex-col gap-4 xl:grid xl:grid-cols-2">
             <div class="flex flex-col gap-1">
               <label class="text-xs uppercase font-semibold">Nome Completo</label>
               <input class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs" type="text" placeholder="Eng. Carlos Silva">
@@ -328,7 +328,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 xl:grid xl:grid-cols-2">
             <div class="flex flex-col gap-1">
               <label class="text-xs uppercase font-semibold">Segmento da Planta</label>
               <select class="px-3.5 py-2.5 bg-white border border-[#E2E8F0] rounded-sm text-xs">
@@ -358,8 +358,8 @@
        - Disposição em flexbox responsivo (colunas empilhadas no mobile, linha no desktop).
   =========================================== -->
   <footer>
-    <div class="flex flex-col gap-8 bg-[#0F172A] px-4 py-8 items-center">
-      <div class="flex flex-col items-center pb-8 gap-4 border-b border-[#1E293B]">
+    <div class="flex flex-col gap-8 bg-[#0F172A] px-4 py-8 items-center xl:px-88">
+      <div class="flex flex-col items-center pb-8 gap-4 border-b border-[#1E293B] w-full xl:flex-row xl:justify-between"">
         <div class="flex flex-row gap-3 items-center">
           <div class="px-1.5 py-1 bg-[#1D4ED8] rounded-sm text-xs font-bold text-white">WEG</div>
           <span class="text-xs text-white font-bold">Transformando energia em soluções.</span>
@@ -370,7 +370,7 @@
           <a href="#">Portal do Cliente</a>
         </div>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 xl:flex-row xl:justify-between xl:w-full">
         <p class="text-xs text-gray-500">© 2026 WEG Equipamentos Elétricos S.A. Todos os direitos reservados. (Projeto Fictício para Fins Didáticos).</p>
         <div class="flex flex-row items-center justify-center gap-4">
           <a class="text-xs text-gray-500 href="#">Termos de Uso</a>
