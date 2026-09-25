@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEG SyncDrive IoT - Exercício Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-header-inner">
+            <div class="brand">
+                <div class="brand-logo">WEG</div>
+                <div class="brand-name">
+                    <span class="brand-title">SyncDrive</span>
+                    <span class="brand-subtitle">Industrial IoT</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a class="nav-link" href="#solucao">A Solução</a>
+                <a class="nav-link" href="#recursos">Tecnologia</a>
+                <a class="nav-link" href="#metricas">Performance</a>
+                <a class="nav-link" href="#aplicacoes">Aplicações</a>
+                <a class="nav-link" href="#novidades">Notícias</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="consult-link" href="#contato">Falar com Consultor</a>
+                <a class="primary-button header-button" href="#contato">Especificar Motor</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="solucao">
+            <div>
+                <div class="hero">
+
+                    <!-- Coluna 1: Conteúdo Textual -->
+                    <div class="hero-content">
+                        <span class="eyebrow">• Indústria 4.0 & Manutenção Preditiva</span>
+                        <h1 class="hero-title">WEG SyncDrive: Confiabilidade extrema com inteligência preditiva.</h1>
+                        <p class="muted-text">
+                            O motor elétrico síncrono que combina rendimento ultra-premium (IE5), sensoriamento
+                            integrado de vibração e temperatura e conectividade instantânea com a nuvem WEG IoT.
+                        </p>
+                        <div class="hero-buttons">
+                            <a class="primary-button hero-button" href="#contato">Solicitar Folha de Dados</a>
+                            <a class="secondary-button hero-button" href="#recursos">Conhecer a Arquitetura</a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Card de Telemetria IoT -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-body">
+                            <div class="telemetry-header">
+                                <span class="node-id">NODE_ID: WEG-MTR-8842</span>
+                                <div>
+                                    <span class="online-dot"></span>
+                                    <span class="online-label">Online 60Hz</span>
+                                </div>
+                            </div>
+
+                            <div class="telemetry-body">
+                                <div class="metric-main">
+                                    <span class="metric-label">Eficiência Energética</span>
+                                    <div class="metric-value">96.8% <span class="metric-status-green">(Padrão
+                                            IE5)</span></div>
+                                </div>
+
+                                <div class="metric-grid">
+                                    <div class="metric-box">
+                                        <span class="metric-box-label">Vibração RMS</span>
+                                        <div class="metric-box-value">0.82 mm/s</div>
+                                        <span class="metric-green">✓ Faixa Ideal ISO</span>
+                                    </div>
+                                    <div class="metric-box">
+                                        <span class="metric-box-label">Temp. Mancal</span>
+                                        <div class="metric-box-value">62.4 °C</div>
+                                        <span class="metric-blue">Normal (PT100)</span>
+                                    </div>
+                                </div>
+
+                                <div class="prediction">
+                                    ⚡ Previsão de manutenção: operação normal pelos próximos 12 meses.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="recursos">
+            <div class="section section-centered">
+                <div class="section-heading">
+                    <h2 class="section-title">Engenharia pensada para regime contínuo</h2>
+                    <p class="muted-text">Projetado para suportar ambientes industriais severos sem comprometer o fluxo
+                        operacional.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3 class="feature-title">Nível de Rendimento IE5</h3>
+                        <p class="small-muted">Rotores com ímãs permanentes de terras raras que eliminam perdas por
+                            efeito Joule no rotor, gerando até 35% de economia em perdas elétricas.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">📡</div>
+                        <h3 class="feature-title">Módulo IoT Plug & Play</h3>
+                        <p class="small-muted">Sensores triaxiais acoplados de fábrica comunicando via Bluetooth Low
+                            Energy ou redes industriais cabeadas diretamente com o gateway da planta.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3 class="feature-title">Grau de Proteção IP66 / W3</h3>
+                        <p class="small-muted">Carcaça em ferro fundido de alta resistência mecânica com pintura
+                            anticorrosiva de alto desempenho, apto para atmosferas agressivas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="metricas">
+            <div class="metrics-section">
+                <div class="metrics-grid">
+                    <div class="metric-stat">
+                        <div class="metric-stat-number">-70%</div>
+                        <div class="metric-stat-label">Paradas Não Planejadas</div>
+                    </div>
+                    <div class="metric-stat metric-stat-bordered">
+                        <div class="metric-stat-number">IE5</div>
+                        <div class="metric-stat-label">Classificação Energética</div>
+                    </div>
+                    <div class="metric-stat metric-stat-bordered">
+                        <div class="metric-stat-number">100k+</div>
+                        <div class="metric-stat-label">Horas de Vida dos Mancais</div>
+                    </div>
+                    <div class="metric-stat metric-stat-bordered">
+                        <div class="metric-stat-number">24/7</div>
+                        <div class="metric-stat-label">Telemetria em Nuvem</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+         5. APLICAÇÕES INDUSTRIAIS
+         Desafio:
+         - Grid de 4 colunas adaptável (1 col mobile, 2 sm, 4 lg).
+         - Uso de tags de categoria uppercase com tipografia reduzida.
+    =========================================== -->
+        <section id="aplicacoes">
+            <div class="applications-section">
+                <div class="section-heading compact">
+                    <h2 class="section-title">Projetado para indústrias críticas</h2>
+                    <p class="muted-text">Linhas de montagem e processos onde a interrupção não é uma opção.</p>
+                </div>
+
+                <div class="application-grid">
+                    <div class="application-card">
+                        <span class="application-category">Mineração</span>
+                        <h4 class="application-title">Correias & Britadores</h4>
+                        <p class="small-muted">Torque constante em baixas rotações sem necessidade de redutores pesados.
+                        </p>
+                    </div>
+
+                    <div class="application-card">
+                        <span class="application-category">Saneamento</span>
+                        <h4 class="application-title">Estações de Bombeamento</h4>
+                        <p class="small-muted">Redução drástica do custo de kWh em bombas centrífugas de regime 24
+                            horas.</p>
+                    </div>
+
+                    <div class="application-card">
+                        <span class="application-category">Papel & Celulose</span>
+                        <h4 class="application-title">Secadores e Bobinadeiras</h4>
+                        <p class="small-muted">Precisão milimétrica de sincronismo de velocidade entre rolos condutores.
+                        </p>
+                    </div>
+
+                    <div class="application-card">
+                        <span class="application-category">Agroindústria</span>
+                        <h4 class="application-title">Silos & Ventiladores</h4>
+                        <p class="small-muted">Operação imune a poeira condutiva com baixo índice de aquecimento
+                            residual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novidades">
+            <div class="news-section">
+
+                <div class="section-heading compact">
+                    <div>
+                        <span class="news-kicker">Sala de Imprensa & Artigos</span>
+                        <h2 class="news-title">Últimas notícias WEG SyncDrive</h2>
+                    </div>
+                    <a class="news-link" href="#">Ver central de notícias →</a>
+                </div>
+
+                <div class="news-grid">
+                    <!-- Notícia 1 -->
+                    <article class="news-card">
+                        <div class="news-image news-image-1">⚙️</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-category">Engenharia</span>
+                                <span class="separator">•</span>
+                                <time class="news-date">02 Set 2026</time>
+                            </div>
+                            <h3 class="bold">
+                                <a href="#">Expansão da linha SyncDrive com novas carcaças até 500 kW</a>
+                            </h3>
+                            <p class="small-muted">Novos modelos entregam rendimento nominal superior mesmo em cargas
+                                parciais de 25% a 50%.</p>
+                            <a class="news-read-link" href="#">Ler comunicado técnico</a>
+                        </div>
+                    </article>
+
+                    <!-- Notícia 2 -->
+                    <article class="rounded-lg  bg-white border border-[#E2E8F0] max-w-141">
+                        <div class="news-image news-image-2">🌱</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-category">Sustentabilidade</span>
+                                <span class="separator">•</span>
+                                <time class="news-date">28 Ago 2026</time>
+                            </div>
+                            <h3 class="bold">
+                                <a href="#">Estudo de caso: Usina reduz 420 toneladas de CO₂ ao ano</a>
+                            </h3>
+                            <p class="small-muted">Substituição de parque de motores antigos por tecnologia IE5 com
+                                retorno de investimento em 14 meses.</p>
+                            <a class="news-read-link" href="#">Baixar relatório PDF</a>
+                        </div>
+                    </article>
+
+                    <!-- Notícia 3 -->
+                    <article class="rounded-lg  bg-white border border-[#E2E8F0] max-w-141">
+                        <div class="news-image news-image-3">🧠</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span
+                                    class="text-xs px-2 py-1 rounded-sm text-[#1D4ED8] font-semibold bg-[#EFF6FF] whitespace-nowrap">Algoritmos
+                                    IA</span>
+                                <span>•</span>
+                                <time class="news-date">15 Ago 2026</time>
+                            </div>
+                            <h3 class="bold">
+                                <a href="#">Atualização do firmware inclui detecção precoce de folga</a>
+                            </h3>
+                            <p class="small-muted">Novo modelo preditivo cruza espectro harmônico de corrente com dados
+                                de aceleração dos mancais.</p>
+                            <a class="news-read-link" href="#">Ver notas da versão</a>
+                        </div>
+                    </article>
+
+                    <!-- Notícia 4 -->
+                    <article class="rounded-lg  bg-white border border-[#E2E8F0] max-w-141">
+                        <div class="news-image news-image-4">🏆</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-category">Premiação</span>
+                                <span class="separator">•</span>
+                                <time class="news-date">04 Ago 2026</time>
+                            </div>
+                            <h3 class="bold">
+                                <a href="#">SyncDrive vence prêmio de Inovação Industrial 2026</a>
+                            </h3>
+                            <p class="small-muted">Reconhecimento internacional destaca a robustez do hardware integrado
+                                ao ecossistema WEG IoT.</p>
+                            <a class="news-read-link" href="#">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <section id="contato">
+            <div class="contact-section">
+                <div class="contact-heading">
+                    <h2 class="contact-title">Dimensione seu motor com nossos especialistas</h2>
+                    <p class="muted-text">Preencha os dados da sua aplicação e receba o estudo de payback e eficiência.
+                    </p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="form-label">Nome Completo</label>
+                            <input class="form-control" type="text" placeholder="Eng. Carlos Silva">
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label">E-mail Corporativo</label>
+                            <input class="form-control" type="email" placeholder="carlos@industria.com.br">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="form-label">Segmento da Planta</label>
+                            <select class="form-control">
+                                <option>Mineração e Siderurgia</option>
+                                <option>Papel e Celulose</option>
+                                <option>Saneamento e Água</option>
+                                <option>Química e Petroquímica</option>
+                                <option>Alimentos e Bebidas</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label">Potência Estimada (kW/cv)</label>
+                            <input class="form-control" type="text" placeholder="Ex: 75 kW / 100 cv">
+                        </div>
+                    </div>
+
+                    <button class="submit-button" href="#contato" type="submit">Solicitar Contato da Engenharia de
+                        Aplicação</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top"">
+        <div class=" flex flex-row gap-3 items-center">
+                <div class="footer-logo">WEG</div>
+                <span class="footer-tagline">Transformando energia em soluções.</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Catálogos Técnicos</a>
+                <a href="#">Assistências Técnicas</a>
+                <a href="#">Portal do Cliente</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-muted">© 2026 WEG Equipamentos Elétricos S.A. Todos os direitos reservados. (Projeto
+                Fictício para Fins Didáticos).</p>
+            <div class="footer-legal">
+                <a class="text-xs text-gray-500 href=" #">Termos de Uso</a>
+                <a class="text-xs text-gray-500 href=" #">Privacidade de Dados</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
